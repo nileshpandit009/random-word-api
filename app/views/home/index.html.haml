@@ -1,0 +1,47 @@
+%div.root
+  %h1{ :style => "text-align: center;" } Welcome to Random Word API
+  %div.docs
+    %h3
+      %li Documentation
+    %div.line
+      Send a GET request to
+      %code /words?limit=10
+      %br
+      %li.params-info
+        (change
+        %code limit
+        to get specific number of words)
+    %div.line
+      You can toggle on swear words as
+      %code /words?swear=true
+      %br
+      %li.params-info
+        (
+        %code swear
+        can be
+        %code true
+        or
+        %code false
+        )
+      %div.line
+        If you want only swear words:
+        %br
+        Send a GET request to
+        %code /words/swears?limit=10
+  %div.links
+    %span= link_to raw("Words"), words_path, :title => 'Random words'
+    %span= link_to raw("Swear words"), words_swears_path, :title => 'Random swear words'
+  %div.credits
+    %div.credits-title
+      %hr.title-spacers
+      %h5 Credits
+      %hr.title-spacers
+    %div
+      All the words are gathered by 
+      %a{ :href => "https://github.com/RazorSh4rk", :title => "RazorSh4rk" }
+        RazorSh4rk
+      %br
+      Website built by me (
+      %a{ :href => "https://github.com/nileshpandit009", :title => "Nilesh Pandit" }
+        Nilesh Pandit
+      )
