@@ -1,4 +1,4 @@
 # README
 
-A simple rest api to serve random words.
-Built on Rails
+A simple REST API to serve random words.
+Built on Rails.
